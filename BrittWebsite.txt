@@ -1,6 +1,14 @@
-opzoeken
-	hosting
-	url kosten
+uren
+17/09 2h
+18/09 1h
+
+
+todo
+ font style
+ 
+
+Met Britt bespreken/bekijken
+	volgorde behandelingen
 
 domein kopen
 	https://www.strato.nl/
@@ -11,6 +19,7 @@ hosting
 
 kleurenpallet
 	beige zand creme lichtroze maar ook voor mannen
+	zie mail voor codes
 
 Website voorbeelden
 https://www.tres-belle-dendermonde.be/nl/prijzen/index.html

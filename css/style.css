@@ -1,0 +1,83 @@
+:root {
+  --main-color: #3498db;
+  --topnav-color: #caac8b;
+  --text-color: #f5f5f5;
+  --background-color: #f5f5f5;
+  --active-color: #ccb9ac;
+  /* #d8c9ba; */
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+div.divTopnav {
+}
+
+ul.topnav {
+  float: center;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  background-color: var(--topnav-color);
+}
+
+ul.topnav li {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: x-large;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: var(--active-color);
+}
+
+ul.topnav li a.active {
+  background-color: var(--active-color);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #38444d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f105;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li {
+    float: none;
+  }
+  .column {
+    width: 100%;
+  }
+}
