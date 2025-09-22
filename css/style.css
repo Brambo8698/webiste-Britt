@@ -12,19 +12,29 @@ body {
   background-color: var(--background-color);
 }
 
-div.divTopnav {
+* {
+  box-sizing: border-box;
 }
 
 ul.topnav {
-  float: center;
   list-style-type: none;
   margin: 0;
   display: flex;
   background-color: var(--topnav-color);
+  justify-content: space-between; /* ✅ logo left, nav right */
+  align-items: center; /* ✅ vertical centering */
+  padding: 0 20px; /* ✅ spacing */
 }
 
-ul.topnav li {
-  float: right;
+ul.topnav .logo img {
+  /* ✅ keep items in a row */
+  height: 40px; /* ✅ size for logo */
+}
+
+ul.topnav .nav-items {
+  /* ✅ keep items in a row */
+  display: flex; /* ✅ keep items in a row */
+  gap: 20px; /* ✅ spacing between links */
 }
 
 ul.topnav li a {
@@ -74,8 +84,16 @@ li.dropdown {
 }
 
 @media screen and (max-width: 600px) {
+  ul.topnav .logo {
+    display: none; /* hide logo */
+  }
   ul.topnav li {
     float: none;
+  }
+  ul.topnav .nav-items {
+    flex-direction: column; /* stack links */
+    width: 100%; /* take full width */
+    gap: 0; /* no spacing between */
   }
   .column {
     width: 100%;

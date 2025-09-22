@@ -1,14 +1,25 @@
 uren
 17/09 2h
 18/09 1h
+22/09 3h
 
 
 todo
  font style
+ logo in navbalk bij alles zetten als Britt het goed vind
+ -contact pagina layout
+ prijslijst layout
+ -diensten layout
+ diensten extra fotos
+ footer
+ layout mobile
  
 
 Met Britt bespreken/bekijken
 	volgorde behandelingen
+	bij openingsuren mss vermelden dat het ook uizonderlijk buiten de uren kan mss met nog uitleg ofzo
+	waar wil je betalingsopties en annulatieinfo?
+	logo wat ermee te doen? -> zie contact pagina
 
 domein kopen
 	https://www.strato.nl/
