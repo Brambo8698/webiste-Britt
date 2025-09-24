@@ -11,13 +11,13 @@ todo
  prijslijst layout
  -diensten layout
  diensten extra fotos
- footer
+ footer met gdpr dingen
  layout mobile
+	hamburgermenu header
  
 
 Met Britt bespreken/bekijken
-	volgorde behandelingen
-	bij openingsuren mss vermelden dat het ook uizonderlijk buiten de uren kan mss met nog uitleg ofzo
+	bij openingsuren mss vermelden dat het ook uizonderlijk buiten de uren kan mss met nog uitleg ofzo -> Britt gaat nog tekst voorzien en dat komt er algemeen bij
 	waar wil je betalingsopties en annulatieinfo?
 	logo wat ermee te doen? -> zie contact pagina
 
