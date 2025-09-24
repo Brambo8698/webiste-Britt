@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-    <ul class="topnav">
+  <body>
+    <ul class="topnav" id="myTopnav">
       <li class="logo">
         <a href="index.html">
           <img src="logo.png" alt="Logo" />
@@ -38,15 +37,28 @@
         <li><a href="Prijslijst.html">Prijslijst</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </div>
+      <li class="icon">
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px"
+          onclick="myFunction(this)"
+          >&#9776;</a
+        >
+      </li>
     </ul>
 
-  <div style="padding:0 16px;">
-    <h2>Responsive Topnav Example</h2>
-    <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
-    <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-    <h4>Resize the browser window to see the effect.</h4>
-  </div>
-
-</body>
-
+    <div style="padding: 0 16px">
+      <h2>Responsive Topnav Example</h2>
+      <p>
+        This example use media queries to stack the topnav vertically when the
+        screen size is 600px or less.
+      </p>
+      <p>
+        You will learn more about media queries and responsive web design later
+        in our CSS Tutorial.
+      </p>
+      <h4>Resize the browser window to see the effect.</h4>
+    </div>
+    <script src=script.js></script>
+  </body>
 </html>

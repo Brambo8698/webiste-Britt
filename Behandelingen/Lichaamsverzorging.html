@@ -6,26 +6,39 @@
     <link rel="stylesheet" href="behandelingen.css" />
   </head>
   <body>
-    <ul class="topnav">
-      <li><a href="../index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
-        <div class="dropdown-content">
-          <a href="Pedicure.html">Pedicure</a>
-          <a href="Massage.html">Massage</a>
-          <a class="active" href="Lichaamsverzorging.html"
-            >Lichaamsverzorging</a
-          >
-          <a href="Make-up.html">Make-up</a>
-          <a href="WimpersWenkbrauwen.html">Wimpers en wenkbrauwen</a>
-          <a href="Gelaatsverzorgingen.html">Gelaatsverzorgingen</a>
-          <a href="Ontharingen.html">Ontharingen</a>
-          <a href="Manicure.html">Manicure</a>
-          <a href="Cadeaubon.html">Cadeaubon</a>
-        </div>
+    <ul class="topnav" id="myTopnav">
+      <li class="logo">
+        <a href="../index.html">
+          <img src="../logo.png" alt="Logo" />
+        </a>
       </li>
-      <li><a href="../Prijslijst.html">Prijslijst</a></li>
-      <li><a href="../Contact.html">Contact</a></li>
+      <div class="nav-items">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
+          <div class="dropdown-content">
+            <a href="Pedicure.html">Pedicure</a>
+            <a href="Massage.html">Massage</a>
+            <a class="active" href="Lichaamsverzorging.html">Lichaamsverzorging</a>
+            <a href="Make-up.html">Make-up</a>
+            <a href="WimpersWenkbrauwen.html">Wimpers en wenkbrauwen</a>
+            <a href="Gelaatsverzorgingen.html">Gelaatsverzorgingen</a>
+            <a href="Ontharingen.html">Ontharingen</a>
+            <a href="Manicure.html">Manicure</a>
+            <a href="Cadeaubon.html">Cadeaubon</a>
+          </div>
+        </li>
+        <li><a href="../Prijslijst.html">Prijslijst</a></li>
+        <li><a href="../Contact.html">Contact</a></li>
+      </div>
+      <li class="icon">
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px"
+          onclick="myFunction(this)"
+          >&#9776;</a
+        >
+      </li>
     </ul>
 
     <!-- Left section -->
@@ -59,5 +72,6 @@
         </div>
       </div>
     </div>
+    <script src=../script.js></script>
   </body>
 </html>
