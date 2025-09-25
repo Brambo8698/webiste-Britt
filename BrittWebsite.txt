@@ -16,8 +16,9 @@ todo
  layout mobile
 	-hamburgermenu header
 	behandelingen paginas
- home pagina
-	slideshow met fotos
+	home pagina
+ -home pagina
+	mss feedback verwerken
  href="index" -> href="https://brambo8698.github.io/webiste-Britt"
  
 
