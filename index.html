@@ -4,38 +4,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <style>
+    .column {
+      float: left;
+      width: 24%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .columnside {
+      float: left;
+      width: 14%;
+      padding: 1px;
+    }
 
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .text {
+      /* padding-left: 14%;
+      padding-right: 14%; */
+      text-align: left;
+      font-size: large;
+      font-family: Lato, sans-serif;
+      float: left;
+      width: 36%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .picture {
+      float: left;
+      width: 36%;
+      padding: 10px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
   <body>
     <ul class="topnav" id="myTopnav">
       <li class="logo">
-        <a href="index.html">
+        <a href="index">
           <img src="logo.png" alt="Logo" />
         </a>
       </li>
       <div class="nav-items">
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="index">Home</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
           <div class="dropdown-content">
-            <a href="Behandelingen/Pedicure.html">Pedicure</a>
-            <a href="Behandelingen/Massage.html">Massage</a>
-            <a href="Behandelingen/Lichaamsverzorging.html"
-              >Lichaamsverzorging</a
-            >
-            <a href="Behandelingen/Make-up.html">Make-up</a>
-            <a href="Behandelingen/WimpersWenkbrauwen.html"
+            <a href="Behandelingen/Pedicure">Pedicure</a>
+            <a href="Behandelingen/Massage">Massage</a>
+            <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
+            <a href="Behandelingen/Make-up">Make-up</a>
+            <a href="Behandelingen/WimpersWenkbrauwen"
               >Wimpers en wenkbrauwen</a
             >
-            <a href="Behandelingen/Gelaatsverzorgingen.html"
-              >Gelaatsverzorgingen</a
-            >
-            <a href="Behandelingen/Ontharingen.html">Ontharingen</a>
-            <a href="Behandelingen/Manicure.html">Manicure</a>
-            <a href="Behandelingen/Cadeaubon.html">Cadeaubon</a>
+            <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+            <a href="Behandelingen/Ontharingen">Ontharingen</a>
+            <a href="Behandelingen/Manicure">Manicure</a>
+            <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
           </div>
         </li>
-        <li><a href="Prijslijst.html">Prijslijst</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Prijslijst">Prijslijst</a></li>
+        <li><a href="Contact">Contact</a></li>
       </div>
       <li class="icon">
         <a
@@ -47,18 +82,43 @@
       </li>
     </ul>
 
-    <div style="padding: 0 16px">
-      <h2>Responsive Topnav Example</h2>
-      <p>
-        This example use media queries to stack the topnav vertically when the
-        screen size is 600px or less.
-      </p>
-      <p>
-        You will learn more about media queries and responsive web design later
-        in our CSS Tutorial.
-      </p>
-      <h4>Resize the browser window to see the effect.</h4>
+    <div class="row">
+      <div class="columnside"></div>
+      <div class="column"><img src="picture2.jpeg" width="100%" /></div>
+      <div class="column"><img src="picture1.jpg" width="100%" /></div>
+      <div class="column"><img src="picture3.jpeg" width="100%" /></div>
+      <div class="columnside"></div>
     </div>
-    <script src=script.js></script>
+    <div class="row">
+      <div class="columnside"></div>
+      <div class="text">
+        <h2>Welkom bij Glow By Britt</h2>
+        <p>
+          Ik ben Britt Van Cronenburg. Ik behaalde mijn diploma tot
+          schoonheidsspecialiste in 2024. Na de opleiding begon het bij mij al
+          snel te kriebelen om mijn eigen schoonheidssalon te starten. Zo
+          ontstond in 2025 Glow By Britt.
+        </p>
+        <p>
+          Bij Glow By Britt staat de beleving centraal: een moment van
+          ontspanning en rust, waarin ik mensen laat stralen van binnen én van
+          buiten. Dit door tal van behandelingen: gelaatsverzorging,
+          lichaamsverzorging, ontharing, pedicure, manicure, flexi tips
+          nagelverlenging, massage en tot slot het kleuren en liften van de
+          wenkbrauwen en wimpers.
+        </p>
+        <p>Tot snel!</p>
+      </div>
+      <div class="picture"><img src="picture4.jpeg" width="75%" /></div>
+      <div class="columnside"></div>
+    </div>
+    <footer>
+      <p>© 2025 Glow By Britt. All rights reserved.</p>
+      <p>
+        <a href="PrivacyPolicy.html">Privacybeleid</a>
+        <a href="PrivacyPolicy.html">Algemene voorwaarden</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

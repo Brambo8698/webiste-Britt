@@ -3,21 +3,22 @@ uren
 18/09 1h
 22/09 3h
 24/09 3h
+25/09 2h
 
 
 todo
  font style
- logo in navbalk bij alles zetten als Britt het goed vind
  -contact pagina layout
 	extra sociale media
-
- -prijslijst layout
- -diensten layout
  diensten extra fotos
  footer met gdpr dingen
+	terms and conditions via chatgpt
  layout mobile
 	-hamburgermenu header
- filenaam.html uit url filteren
+	behandelingen paginas
+ home pagina
+	slideshow met fotos
+ href="index" -> href="https://brambo8698.github.io/webiste-Britt"
  
 
 Met Britt bespreken/bekijken
