@@ -33,10 +33,21 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  .column-66,
-  .column-33 {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .column-66 {
     width: 100%;
     text-align: center;
+    padding: 5px;
+  }
+  .column-33 {
+    width: 0%;
+    text-align: center;
+    padding: 0px;
   }
   img {
     margin: auto;

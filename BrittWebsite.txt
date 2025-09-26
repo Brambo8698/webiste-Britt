@@ -4,22 +4,22 @@ uren
 22/09 3h
 24/09 3h
 25/09 2h
+26/09 1h
 
 
 todo
  font style
  -contact pagina layout
 	extra sociale media
- diensten extra fotos
- footer met gdpr dingen
-	terms and conditions via chatgpt
  layout mobile
 	-hamburgermenu header
-	behandelingen paginas
-	home pagina
- -home pagina
-	mss feedback verwerken
- href="index" -> href="https://brambo8698.github.io/webiste-Britt"
+ fotos behandelingen
+
+
+todo later
+ diensten extra fotos
+ href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
+ 
  
 
 Met Britt bespreken/bekijken
@@ -31,28 +31,10 @@ domein kopen
 	https://www.strato.nl/
 	GlowByBritt
 
-hosting
-	via github pages
-
-kleurenpallet
-	beige zand creme lichtroze maar ook voor mannen
-	zie mail voor codes
-
 Website voorbeelden
 https://www.tres-belle-dendermonde.be/nl/prijzen/index.html
 https://secrets-of-beauty.be/prijslijst/
 https://schoonheidshuys.myshopify.com/
-
-Features
-Homepagina met duidelijke “hero” sectie (mooie foto’s, kort wat de specialiste doet, “call to action”)
-	over ons
-
-Diensten / behandelingen
-	met dropdown naar verschillende paginas
-	elke dienst met een foto
-
-Prijslijst
-	alles op 1 pagina opdeling zie pdf mail
 	
 
 geen boekingspagina maar een contactpagina met alle gegevens
@@ -62,10 +44,6 @@ geen boekingspagina maar een contactpagina met alle gegevens
 	link sociale media
 	gegevens
 	openingsuren enkel op afspraak
-
-Responsive design / mobielvriendelijk
-
-Veiligheid & privacy / GDPR / cookies‑beleid
 
 
 Toekomst mss
