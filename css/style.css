@@ -50,14 +50,12 @@ ul.topnav {
 }
 
 ul.topnav .logo img {
-  /* ✅ keep items in a row */
-  height: 40px; /* ✅ size for logo */
+  height: 40px;
 }
 
 ul.topnav .nav-items {
-  /* ✅ keep items in a row */
-  display: flex; /* ✅ keep items in a row */
-  gap: 20px; /* ✅ spacing between links */
+  display: flex;
+  gap: 10px;
 }
 
 ul.topnav li a {
@@ -68,6 +66,7 @@ ul.topnav li a {
   text-decoration: none;
   font-size: x-large;
   display: block;
+  font-family: Lato, sans-serif;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -102,6 +101,7 @@ li.dropdown {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-family: Lato, sans-serif;
 }
 
 .dropdown-content a:hover {

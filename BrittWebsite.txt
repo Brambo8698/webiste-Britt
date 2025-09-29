@@ -5,19 +5,12 @@ uren
 24/09 3h
 25/09 2h
 26/09 1h
+29/09 1h
 
 
 todo
- font style
- -contact pagina layout
-	extra sociale media
- layout mobile
-	-hamburgermenu header
  fotos behandelingen
-
-
-todo later
- diensten extra fotos
+ opmaak behandelingen
  href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
  
  
