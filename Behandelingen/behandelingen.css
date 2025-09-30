@@ -1,7 +1,8 @@
 .container {
   padding-left: 64px;
   padding-right: 64px;
-  padding-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .row:after {
@@ -13,13 +14,14 @@
 .column-66 {
   float: left;
   width: 60%;
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 .column-33 {
   float: left;
   width: 40%;
-  padding: 20px;
+  padding: 0px 20px;
+  text-align: center;
 }
 
 img {
