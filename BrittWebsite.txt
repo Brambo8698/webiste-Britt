@@ -6,12 +6,13 @@ uren
 25/09 2h
 26/09 1h
 29/09 1h
-30/09 
+30/09 2h
 
 
 todo
  fotos behandelingen
  opmaak behandelingen
+	title toevoegen
  href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
  
  
