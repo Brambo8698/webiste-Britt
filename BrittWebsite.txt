@@ -8,13 +8,14 @@ uren
 29/09 1h
 30/09 2h
 1/10 1h
-4/10 
+4/10 2h
 
 
 todo
  fotos behandelingen
  opmaak behandelingen
-	title toevoegen
+	intros aanvullen
+  opmaak ontharingen zonder fotos?
  href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
  
  
