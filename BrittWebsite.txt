@@ -21,9 +21,7 @@ todo
  
 
 Met Britt bespreken/bekijken
-	nakijken Lichaamsverzorging types
 	waar wil je betalingsopties en annulatieinfo?
-	logo wat ermee te doen?
 
 domein kopen
 	https://www.strato.nl/
