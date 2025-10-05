@@ -44,11 +44,8 @@ ul.topnav {
   display: flex;
   background-color: var(--topnav-color);
   justify-content: space-between;
-  /* ✅ logo left, nav right */
   align-items: center;
-  /* ✅ vertical centering */
   padding: 0 20px;
-  /* ✅ spacing */
   overflow: hidden;
 }
 

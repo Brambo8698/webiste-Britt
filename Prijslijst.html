@@ -1,393 +1,422 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Glow By Britt</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    .price-section {
-      max-width: 60%;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    .section-title {
-      margin-bottom: 15px;
-      font-size: 25px;
-      font-weight: 600;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 8px;
-      font-family: Lato, sans-serif;
-    }
-
-    .price-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .price-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 0;
-      font-size: 20px;
-    }
-
-    .small-price-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 10px;
-      font-size: 15px;
-    }
-
-    .item-name {
-      white-space: nowrap;
-      font-family: Lato, sans-serif;
-    }
-
-    .dots {
-      flex: 1;
-      border-bottom: 1px dotted #ccc;
-      margin: 0 8px;
-    }
-
-    .item-price {
-      white-space: nowrap;
-      font-weight: 600;
-      font-family: Lato, sans-serif;
-    }
-
-    @media screen and (max-width: 600px) {
+  <head>
+    <title>Glow By Britt</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
       .price-section {
-        max-width: 80%;
-        padding: 15px;
+        max-width: 60%;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       }
 
-      .price-item,
+      .section-title {
+        margin-bottom: 15px;
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+        font-family: Lato, sans-serif;
+      }
+
+      .price-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .price-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 0;
+        font-size: 20px;
+      }
+
       .small-price-item {
-        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 10px;
+        font-size: 15px;
       }
 
       .item-name {
-        white-space: normal;
-        flex: 1 1 100%;
+        white-space: nowrap;
+        font-family: Lato, sans-serif;
       }
 
       .dots {
-        display: none;
+        flex: 1;
+        border-bottom: 1px dotted #ccc;
+        margin: 0 8px;
       }
 
       .item-price {
-        flex: 1 1 100%;
-        text-align: left;
-        margin-top: 4px;
+        white-space: nowrap;
+        font-weight: 600;
+        font-family: Lato, sans-serif;
       }
-    }
-  </style>
-</head>
+      .intro-mobile {
+        display: none;
+      }
 
-<body>
-  <ul class="topnav" id="myTopnav">
-    <li class="logo">
-      <a href="https://brambo8698.github.io/webiste-Britt">
-        <img src="logo.png" alt="Logo" />
-      </a>
-    </li>
-    <div class="nav-items">
-      <li><a href="https://brambo8698.github.io/webiste-Britt">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
-        <div class="dropdown-content">
-          <a href="Behandelingen/Pedicure">Pedicure</a>
-          <a href="Behandelingen/Massage">Massage</a>
-          <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
-          <a href="Behandelingen/Make-up">Make-up</a>
-          <a href="Behandelingen/WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
-          <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
-          <a href="Behandelingen/Ontharingen">Ontharingen</a>
-          <a href="Behandelingen/Manicure">Manicure</a>
-          <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
-        </div>
+      @media screen and (max-width: 600px) {
+        .price-section {
+          max-width: 80%;
+          padding: 15px;
+        }
+
+        .price-item,
+        .small-price-item {
+          flex-wrap: wrap;
+        }
+
+        .item-name {
+          white-space: normal;
+          flex: 1 1 100%;
+        }
+
+        .dots {
+          display: none;
+        }
+
+        .item-price {
+          flex: 1 1 100%;
+          text-align: left;
+          margin-top: 4px;
+        }
+
+        .intro {
+          display: none;
+        }
+
+        .intro-mobile {
+          display: block;
+          text-align: center;
+          color: #555;
+          margin-bottom: 3rem;
+          margin: 0 10%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul class="topnav" id="myTopnav">
+      <li class="logo">
+        <a href="https://www.glowbybritt.be">
+          <img src="logo.png" alt="Logo" />
+        </a>
       </li>
-      <li><a class="active" href="Prijslijst">Prijslijst</a></li>
-      <li><a href="Contact">Contact</a></li>
+      <div class="nav-items">
+        <li><a href="https://www.glowbybritt.be">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
+          <div class="dropdown-content">
+            <a href="Behandelingen/Pedicure">Pedicure</a>
+            <a href="Behandelingen/Massage">Massage</a>
+            <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
+            <a href="Behandelingen/Make-up">Make-up</a>
+            <a href="Behandelingen/WimpersWenkbrauwen"
+              >Wimpers en wenkbrauwen</a
+            >
+            <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+            <a href="Behandelingen/Ontharingen">Ontharingen</a>
+            <a href="Behandelingen/Manicure">Manicure</a>
+            <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
+          </div>
+        </li>
+        <li><a class="active" href="Prijslijst">Prijslijst</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </div>
+      <li class="icon">
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px"
+          onclick="myFunction(this)"
+          >&#9776;</a
+        >
+      </li>
+    </ul>
+
+    <div>
+      <h1>Prijslijst</h1>
+      <p class="intro">
+        Betaal op de manier die jou het beste uitkomt: contant, via Payconiq of
+        met de QR-code bij je bank.
+      </p>
+      <p class="intro">Zo wordt jouw verwenmoment helemaal zorgeloos.</p>
+      <p class="intro-mobile">
+        Betaal op de manier die jou het beste uitkomt: contant, via Payconiq of
+        met de QR-code bij je bank. Zo wordt jouw verwenmoment helemaal
+        zorgeloos.
+      </p>
+      <section class="price-section">
+        <h2 class="section-title">Pedicure</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Basis</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 30</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Spa</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 40</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Basis + lakken</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Basis + gellak</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 45</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Massage</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Nek- en rugmassage (30 min)</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 30</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Nek- en rugmassage (45 min)</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 45</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Beenmassage</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 30</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Voetmassage</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 25</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Ontspannende massage</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 70</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Heavenly touch (30 min)</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 25</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Heavenly touch (45 min)</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Lichaamsverzorging</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Zuiverende rugverzorging</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Hydraterende rugverzorging</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Make-up</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Dag make-up</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Avond make-up</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 40</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Optie aan huis</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 8</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Wimpers en wenkbrauwen</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Wenkbrauwen kleuren</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 12</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Browlift</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 45</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Wimpers kleuren</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 15</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Lashlift</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 50</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Gelaatsverzorgingen</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Mini</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Basis</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 45</span>
+          </li>
+          <li class="small-price-item">
+            <span class="item-name"
+              >Optie voor epileren van de wenkbrauwen</span
+            >
+            <span class="dots"></span>
+            <span class="item-price">€ 5</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Relax</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 60</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Ontharingen</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Onderbenen + knie</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 20</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Bovenbenen</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 15</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Volledige benen</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 30</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Oksels</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 15</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Bikinilijn</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 15</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Mons pubis wax</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 25</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Wenkbrauwen</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 10</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Bovenlip of kin</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 8</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Volledig gelaat</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 20</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Borst/rug</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 30</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Armen</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 20</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Manicure</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Basis</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 20</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Spa</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 30</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Basis + lakken</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 25</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Basis + gellak</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 35</span>
+          </li>
+          <li class="price-item">
+            <span class="item-name">Basis + flexi tip + gellak</span>
+            <span class="dots"></span>
+            <span class="item-price">€ 45</span>
+          </li>
+        </ul>
+      </section>
+      <section class="price-section">
+        <h2 class="section-title">Cadeaubon</h2>
+        <ul class="price-list">
+          <li class="price-item">
+            <span class="item-name">Af te halen</span>
+            <span class="dots"></span>
+            <span class="item-price">€ --</span>
+          </li>
+        </ul>
+      </section>
     </div>
-    <li class="icon">
-      <a href="javascript:void(0);" style="font-size: 20px" onclick="myFunction(this)">&#9776;</a>
-    </li>
-  </ul>
-
-  <div>
-    <h1>Prijslijst</h1>
-    <p class="intro">Betaal op de manier die jou het beste uitkomt: contant, via Payconiq of met de QR-code bij je bank.
-    </p>
-    <p class="intro">Zo wordt jouw verwenmoment helemaal zorgeloos.</p>
-    <section class="price-section">
-      <h2 class="section-title">Pedicure</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Basis</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 30</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Spa</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 40</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Basis + lakken</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Basis + gellak</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 45</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Massage</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Nek- en rugmassage (30 min)</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 30</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Nek- en rugmassage (45 min)</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 45</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Beenmassage</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 30</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Voetmassage</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 25</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Ontspannende massage</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 70</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Heavenly touch (30 min)</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 25</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Heavenly touch (45 min)</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Lichaamsverzorging</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Zuiverende rugverzorging</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Hydraterende rugverzorging</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Make-up</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Dag make-up</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Avond make-up</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 40</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Optie aan huis</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 8</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Wimpers en wenkbrauwen</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Wenkbrauwen kleuren</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 12</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Browlift</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 45</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Wimpers kleuren</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 15</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Lashlift</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 50</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Gelaatsverzorgingen</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Mini</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Basis</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 45</span>
-        </li>
-        <li class="small-price-item">
-          <span class="item-name">Optie voor epileren van de wenkbrauwen</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 5</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Relax</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 60</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Ontharingen</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Onderbenen + knie</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 20</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Bovenbenen</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 15</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Volledige benen</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 30</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Oksels</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 15</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Bikinilijn</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 15</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Mons pubis wax</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 25</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Wenkbrauwen</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 10</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Bovenlip of kin</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 8</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Volledig gelaat</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 20</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Borst/rug</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 30</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Armen</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 20</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Manicure</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Basis</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 20</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Spa</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 30</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Basis + lakken</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 25</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Basis + gellak</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 35</span>
-        </li>
-        <li class="price-item">
-          <span class="item-name">Basis + flexi tip + gellak</span>
-          <span class="dots"></span>
-          <span class="item-price">€ 45</span>
-        </li>
-      </ul>
-    </section>
-    <section class="price-section">
-      <h2 class="section-title">Cadeaubon</h2>
-      <ul class="price-list">
-        <li class="price-item">
-          <span class="item-name">Af te halen</span>
-          <span class="dots"></span>
-          <span class="item-price">€ --</span>
-        </li>
-      </ul>
-    </section>
-  </div>
-  <footer>
-    <p>© 2025 Glow By Britt. All rights reserved.</p>
-    <p>
-      <a href="PrivacyPolicy">Privacybeleid</a>
-      <a href="TermsAndConditions">Algemene voorwaarden</a>
-    </p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    <footer>
+      <p>© 2025 Glow By Britt. All rights reserved.</p>
+      <p>
+        <a href="PrivacyPolicy">Privacybeleid</a>
+        <a href="TermsAndConditions">Algemene voorwaarden</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

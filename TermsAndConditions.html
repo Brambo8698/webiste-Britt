@@ -1,105 +1,123 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Glow By Britt</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .info {
+        padding-left: 25%;
+        padding-right: 25%;
+        font-family: Lato, sans-serif;
+      }
 
-<head>
-  <title>Glow By Britt</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+      @media screen and (max-width: 600px) {
+        .info {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+    </style>
+  </head>
 
-<body>
-  <ul class="topnav" id="myTopnav">
-    <li class="logo">
-      <a href="https://brambo8698.github.io/webiste-Britt">
-        <img src="logo.png" alt="Logo" />
-      </a>
-    </li>
-    <div class="nav-items">
-      <li><a href="https://brambo8698.github.io/webiste-Britt">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
-        <div class="dropdown-content">
-          <a href="Behandelingen/Pedicure">Pedicure</a>
-          <a href="Behandelingen/Massage">Massage</a>
-          <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
-          <a href="Behandelingen/Make-up">Make-up</a>
-          <a href="Behandelingen/WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
-          <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
-          <a href="Behandelingen/Ontharingen">Ontharingen</a>
-          <a href="Behandelingen/Manicure">Manicure</a>
-          <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
-        </div>
+  <body>
+    <ul class="topnav" id="myTopnav">
+      <li class="logo">
+        <a href="https://www.glowbybritt.be">
+          <img src="logo.png" alt="Logo" />
+        </a>
       </li>
-      <li><a href="Prijslijst">Prijslijst</a></li>
-      <li><a href="Contact">Contact</a></li>
+      <div class="nav-items">
+        <li><a href="https://www.glowbybritt.be">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
+          <div class="dropdown-content">
+            <a href="Behandelingen/Pedicure">Pedicure</a>
+            <a href="Behandelingen/Massage">Massage</a>
+            <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
+            <a href="Behandelingen/Make-up">Make-up</a>
+            <a href="Behandelingen/WimpersWenkbrauwen"
+              >Wimpers en wenkbrauwen</a
+            >
+            <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+            <a href="Behandelingen/Ontharingen">Ontharingen</a>
+            <a href="Behandelingen/Manicure">Manicure</a>
+            <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
+          </div>
+        </li>
+        <li><a href="Prijslijst">Prijslijst</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </div>
+      <li class="icon">
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px"
+          onclick="myFunction(this)"
+          >&#9776;</a
+        >
+      </li>
+    </ul>
+
+    <div class="info">
+      <h2>Algemene voorwaarden</h2>
+      <p>Laatst bijgewerkt: 5 oktober 2025</p>
+      <p>
+        Welkom op de website van Glow By Britt. Door deze website te gebruiken,
+        gaat u akkoord met de volgende voorwaarden:
+      </p>
+      <h3>1. Annulatiebeleid</h3>
+      <p>Kan je niet komen? Gelieve 24u op voorhand te annuleren.</p>
+      <p>
+        Bij laattijdige annulatie of no-show wordt 50% van de behandeling
+        aangerekend. Bedankt voor je begrip!
+      </p>
+
+      <h3>2. Geen online afspraken of betalingen</h3>
+      <p>
+        Afspraken kunnen uitsluitend telefonisch of via e-mail gemaakt worden;
+        online boeken of betalen is niet mogelijk.
+      </p>
+      <h3>3. Alleen voor informatieve doeleinden</h3>
+      <p>
+        Deze website is bedoeld voor algemene informatie over het salon,
+        diensten en contactgegevens. Wij garanderen niet dat alle informatie
+        (zoals prijzen, diensten of openingstijden) altijd up-to-date is. Neem
+        voor de meest accurate informatie rechtstreeks contact met ons op.
+      </p>
+      <h3>4. Intellectueel eigendom</h3>
+      <p>
+        Alle tekst, afbeeldingen en merknamen op deze site zijn eigendom van
+        Glow By Britt, tenzij anders vermeld. U mag deze inhoud niet zonder
+        toestemming kopiëren, hergebruiken of verspreiden.
+      </p>
+      <h3>5. Externe links</h3>
+      <p>
+        Onze site kan links naar websites van derden bevatten (zoals Instagram,
+        Facebook of Google Maps). Wij zijn niet verantwoordelijk voor de inhoud
+        of het beleid van die websites.
+      </p>
+      <h3>6. Beperking van aansprakelijkheid</h3>
+      <p>
+        Wij zijn niet aansprakelijk voor enig verlies, schade of ongemak
+        veroorzaakt door het gebruik van deze website of het vertrouwen op de
+        verstrekte informatie.
+      </p>
+      <h3>7. Wijzigingen in deze voorwaarden</h3>
+      <p>
+        Wij kunnen deze algemene voorwaarden te allen tijde bijwerken.
+        Wijzigingen worden hier gepubliceerd met een bijgewerkte datum van
+        “Laatst bijgewerkt”.
+      </p>
     </div>
-    <li class="icon">
-      <a href="javascript:void(0);" style="font-size: 20px" onclick="myFunction(this)">&#9776;</a>
-    </li>
-  </ul>
 
-  <div style="padding-left: 25%; padding-right: 25%; font-family: Lato, sans-serif;">
-    <h2>Algemene voorwaarden</h2>
-    <p>Laatst bijgewerkt: 25 september 2025</p>
-    <p>
-      Welkom op de website van Glow By Britt. Door deze website te
-      gebruiken, gaat u akkoord met de volgende voorwaarden:
-    </p>
-    <h3>1. Annulatiebeleid</h3>
-    <p>
-      Kan je niet komen? Gelieve 24u op voorhand te annuleren.
-    </p>
-    <p>
-      Bij laattijdige annulatie of no-show wordt 50% van de behandeling aangerekend.
-      Bedankt voor je begrip!
-    </p>
-
-    <h3>2. Geen online afspraken of betalingen</h3>
-    <p>
-      Afspraken kunnen uitsluitend telefonisch of via e-mail gemaakt worden; online boeken of betalen is niet mogelijk.
-    </p>
-    <h3>3. Alleen voor informatieve doeleinden</h3>
-    <p>
-      Deze website is bedoeld voor algemene informatie over het salon,
-      diensten en contactgegevens. Wij garanderen niet dat alle informatie
-      (zoals prijzen, diensten of openingstijden) altijd up-to-date is. Neem
-      voor de meest accurate informatie rechtstreeks contact met ons op.
-    </p>
-    <h3>4. Intellectueel eigendom</h3>
-    <p>
-      Alle tekst, afbeeldingen en merknamen op deze site zijn eigendom van
-      Glow By Britt, tenzij anders vermeld. U mag deze inhoud niet
-      zonder toestemming kopiëren, hergebruiken of verspreiden.
-    </p>
-    <h3>5. Externe links</h3>
-    <p>
-      Onze site kan links naar websites van derden bevatten (zoals Instagram,
-      Facebook of Google Maps). Wij zijn niet verantwoordelijk voor de inhoud
-      of het beleid van die websites.
-    </p>
-    <h3>6. Beperking van aansprakelijkheid</h3>
-    <p>
-      Wij zijn niet aansprakelijk voor enig verlies, schade of ongemak
-      veroorzaakt door het gebruik van deze website of het vertrouwen op de
-      verstrekte informatie.
-    </p>
-    <h3>7. Wijzigingen in deze voorwaarden</h3>
-    <p>
-      Wij kunnen deze algemene voorwaarden te allen tijde bijwerken.
-      Wijzigingen worden hier gepubliceerd met een bijgewerkte datum van
-      “Laatst bijgewerkt”.
-    </p>
-  </div>
-
-  <footer>
-    <p>© 2025 Glow By Britt. All rights reserved.</p>
-    <p>
-      <a href="PrivacyPolicy">Privacybeleid</a>
-      <a href="TermsAndConditions">Algemene voorwaarden</a>
-    </p>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    <footer>
+      <p>© 2025 Glow By Britt. All rights reserved.</p>
+      <p>
+        <a href="PrivacyPolicy">Privacybeleid</a>
+        <a href="TermsAndConditions">Algemene voorwaarden</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

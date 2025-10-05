@@ -9,25 +9,15 @@ uren
 30/09 2h
 1/10 1h
 4/10 2h
+5/10 3h
 
 
 todo
-	contact volgorde aanpassen
-	contact betalingsoptie toevoegen
-	prijslijst betalingsoptie toevoegen
-	contact titel en intro
-	prijslijst titel en intro
-	contact
-	href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
+	contact betalingsoptie toevoegen mss
+	contact	mail ook doorklikbaar maken
+	href="https://www.glowbybritt.be" -> href="naamwebsite"
  
  
-
-Met Britt bespreken/bekijken
-	waar wil je betalingsopties en annulatieinfo?
-
-domein kopen
-	https://www.strato.nl/
-	GlowByBritt
 
 Website voorbeelden
 https://www.tres-belle-dendermonde.be/nl/prijzen/index.html
