@@ -13,9 +13,7 @@ uren
 
 
 todo
-	contact betalingsoptie toevoegen mss
-	contact	mail ook doorklikbaar maken
-	href="https://www.glowbybritt.be" -> href="naamwebsite"
+
  
  
 
