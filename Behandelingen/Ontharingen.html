@@ -1,166 +1,194 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Glow By Britt</title>
-    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="behandelingen.css" />
-  </head>
-  <body>
-    <ul class="topnav" id="myTopnav">
-      <li class="logo">
-        <a href="https://brambo8698.github.io/webiste-Britt">
-          <img src="../logo.png" alt="Logo" />
-        </a>
-      </li>
-      <div class="nav-items">
-        <li><a href="https://brambo8698.github.io/webiste-Britt">Home</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
-          <div class="dropdown-content">
-            <a href="Pedicure">Pedicure</a>
-            <a href="Massage">Massage</a>
-            <a href="Lichaamsverzorging">Lichaamsverzorging</a>
-            <a href="Make-up">Make-up</a>
-            <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
-            <a href="Gelaatsverzorgingen">Gelaatsverzorgingen</a>
-            <a class="active" href="Ontharingen">Ontharingen</a>
-            <a href="Manicure">Manicure</a>
-            <a href="Cadeaubon">Cadeaubon</a>
-          </div>
-        </li>
-        <li><a href="../Prijslijst">Prijslijst</a></li>
-        <li><a href="../Contact">Contact</a></li>
-      </div>
-      <li class="icon">
-        <a
-          href="javascript:void(0);"
-          style="font-size: 20px"
-          onclick="myFunction(this)"
-          >&#9776;</a
-        >
-      </li>
-    </ul>
 
-    <section class="treatments">
-      <h1>Ontharingen</h1>
-      <p class="intro">Intro</p>
-      <div class="treatment-row">
-        <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Onderbenen + knie</h2>
-          <p>
-            Haarverwijdering van de onderbenen en knieën voor gladde en
-            verzorgde benen. Optioneel kunnen ook de tenen meegenomen worden.
-          </p>
+<head>
+  <title>Glow By Britt</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="behandelingen.css" />
+  <style>
+    .treatment {
+      display: flex;
+      padding-bottom: 25px;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .treatment-texts {
+      flex: 2;
+    }
+
+    .treatment-image {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="topnav" id="myTopnav">
+    <li class="logo">
+      <a href="https://brambo8698.github.io/webiste-Britt">
+        <img src="../logo.png" alt="Logo" />
+      </a>
+    </li>
+    <div class="nav-items">
+      <li><a href="https://brambo8698.github.io/webiste-Britt">Home</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Behandelingen</a>
+        <div class="dropdown-content">
+          <a href="Pedicure">Pedicure</a>
+          <a href="Massage">Massage</a>
+          <a href="Lichaamsverzorging">Lichaamsverzorging</a>
+          <a href="Make-up">Make-up</a>
+          <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
+          <a href="Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+          <a class="active" href="Ontharingen">Ontharingen</a>
+          <a href="Manicure">Manicure</a>
+          <a href="Cadeaubon">Cadeaubon</a>
+        </div>
+      </li>
+      <li><a href="../Prijslijst">Prijslijst</a></li>
+      <li><a href="../Contact">Contact</a></li>
+    </div>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size: 20px" onclick="myFunction(this)">&#9776;</a>
+    </li>
+  </ul>
+
+  <section class="treatments">
+    <h1>Ontharingen</h1>
+    <p class="intro">Geef je huid de verzorging die het verdient. Ontharingen zorgen voor een zachte en gladde huid,
+      volledig afgestemd op jouw wensen.</p>
+    <div class="treatment">
+      <div class="treatment-texts">
+        <div class="treatment-row">
+          <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Onderbenen + knie</h2>
+            <p>
+              Haarverwijdering van de onderbenen en knieën voor gladde en
+              verzorgde benen. Optioneel kunnen ook de tenen meegenomen worden.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row reverse">
+          <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Bovenbenen</h2>
+            <p>
+              Haarverwijdering van de bovenbenen voor een gladde en verzorgde
+              huid.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row">
+          <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Volledige benen</h2>
+            <p>
+              Haarverwijdering van de volledige benen voor een gladde en verzorgde
+              huid, inclusief knieën. Optioneel kunnen ook de tenen meegenomen
+              worden.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row reverse">
+          <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Oksels</h2>
+            <p>
+              Haarverwijdering van de oksels voor een frisse en verzorgde huid.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row">
+          <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Bikinilijn</h2>
+            <p>
+              Haarverwijdering van de bikinilijn voor een nette en verzorgde look.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="treatment-row reverse">
-        <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Bovenbenen</h2>
-          <p>
-            Haarverwijdering van de bovenbenen voor een gladde en verzorgde
-            huid.
-          </p>
+      <div class="treatment-image"><img src="Images/Ontharingen.jpg" alt="Basis pedicure" /></div>
+    </div>
+    <div class="treatment">
+      <div class="treatment-image"><img src="Images/Ontharingen2.jpg" alt="Basis pedicure" /></div>
+      <div class="treatment-texts">
+        <div class="treatment-row reverse">
+          <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Mons pubis wax</h2>
+            <p>
+              Haarverwijdering van het gebied boven het schaambeen voor een
+              verzorgde en nette uitstraling.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row">
+          <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Wenkbrauwen</h2>
+            <p>
+              Vormgeven en ontharen van de wenkbrauwen voor een nette en verzorgde
+              look.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row reverse">
+          <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Bovenlip of kin</h2>
+            <p>
+              Haarverwijdering van bovenlip of kin voor een glad en verzorgd
+              gezicht.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row">
+          <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Volledig gelaat</h2>
+            <p>
+              Haarverwijdering van het volledige gezicht voor een gladde en
+              verzorgde huid.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row reverse">
+          <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Borst/rug</h2>
+            <p>
+              Haarverwijdering van borst of rug voor een gladde en verzorgde huid.
+            </p>
+          </div>
+        </div>
+        <div class="treatment-row">
+          <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
+          <div class="treatment-info">
+            <h2>Armen</h2>
+            <p>
+              Haarverwijdering van de armen voor een gladde en verzorgde look.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="treatment-row">
-        <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Volledige benen</h2>
-          <p>
-            Haarverwijdering van de volledige benen voor een gladde en verzorgde
-            huid, inclusief knieën. Optioneel kunnen ook de tenen meegenomen
-            worden.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row reverse">
-        <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Oksels</h2>
-          <p>
-            Haarverwijdering van de oksels voor een frisse en verzorgde huid.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row">
-        <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Bikinilijn</h2>
-          <p>
-            Haarverwijdering van de bikinilijn voor een nette en verzorgde look.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row reverse">
-        <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Mons pubis wax</h2>
-          <p>
-            Haarverwijdering van het gebied boven het schaambeen voor een
-            verzorgde en nette uitstraling.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row">
-        <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Wenkbrauwen</h2>
-          <p>
-            Vormgeven en ontharen van de wenkbrauwen voor een nette en verzorgde
-            look.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row reverse">
-        <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Bovenlip of kin</h2>
-          <p>
-            Haarverwijdering van bovenlip of kin voor een glad en verzorgd
-            gezicht.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row">
-        <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Volledig gelaat</h2>
-          <p>
-            Haarverwijdering van het volledige gezicht voor een gladde en
-            verzorgde huid.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row reverse">
-        <!-- <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Borst/rug</h2>
-          <p>
-            Haarverwijdering van borst of rug voor een gladde en verzorgde huid.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row">
-        <!-- <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" /> -->
-        <div class="treatment-info">
-          <h2>Armen</h2>
-          <p>
-            Haarverwijdering van de armen voor een gladde en verzorgde look.
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p>© 2025 Glow By Britt. All rights reserved.</p>
-      <p>
-        <a href="PrivacyPolicy">Privacybeleid</a>
-        <a href="TermsAndConditions">Algemene voorwaarden</a>
-      </p>
-    </footer>
-    <script src="../script.js"></script>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Glow By Britt. All rights reserved.</p>
+    <p>
+      <a href="PrivacyPolicy">Privacybeleid</a>
+      <a href="TermsAndConditions">Algemene voorwaarden</a>
+    </p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
 </html>

@@ -12,11 +12,13 @@ uren
 
 
 todo
- fotos behandelingen
- opmaak behandelingen
-	intros aanvullen
-  opmaak ontharingen zonder fotos?
- href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
+	contact volgorde aanpassen
+	contact betalingsoptie toevoegen
+	prijslijst betalingsoptie toevoegen
+	contact titel en intro
+	prijslijst titel en intro
+	contact
+	href="https://brambo8698.github.io/webiste-Britt" -> href="naamwebsite"
  
  
 
