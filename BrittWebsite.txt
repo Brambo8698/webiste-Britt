@@ -13,11 +13,6 @@ uren
 7/10 1h
 
 
-todo
-
- 
- 
-
 Website voorbeelden
 https://www.tres-belle-dendermonde.be/nl/prijzen/index.html
 https://secrets-of-beauty.be/prijslijst/
@@ -26,11 +21,7 @@ https://schoonheidshuys.myshopify.com/
 
 geen boekingspagina maar een contactpagina met alle gegevens
 	vb: https://secrets-of-beauty.be/contact/
-	betalingsopties
-	kaart locatie
-	link sociale media
-	gegevens
-	openingsuren enkel op afspraak
+	
 
 
 Toekomst mss
@@ -41,3 +32,16 @@ Toekomst mss
 
 Bespreken met Britt
 locatie "Goed om te weten"
+
+todo
+zie notes laptop
+
+Gelaatsverzorgingen
+Pedicure
+Ontharingen
+Massage
+WimpersWenkbrauwen
+Lichaamsverzorging
+Manicure
+Make-up
+Cadeaubon
