@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Behandelingen | Glow By Britt</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .page-shell {
+        width: 88vw;
+        max-width: 1500px;
+        margin: 40px auto;
+        padding: 0 20px 40px;
+      }
+
+      .page-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .page-header h1 {
+        margin-bottom: 0.75rem;
+      }
+
+      .page-header p {
+        color: #555;
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      .info-note {
+        max-width: 900px;
+        margin: 1rem auto 2rem;
+        padding: 0.9rem 1rem;
+        border-left: 4px solid #caac8b;
+        background: rgba(202, 172, 139, 0.12);
+        border-radius: 8px;
+        color: #4b4b4b;
+        font-size: 0.98rem;
+        line-height: 1.6;
+      }
+
+      .info-note strong {
+        color: #3b3b3b;
+      }
+
+      .treatment-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
+        gap: 24px;
+      }
+
+      .treatment-card {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      .treatment-card img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .treatment-card .content {
+        padding: 1.2rem 1.2rem 1.4rem;
+      }
+
+      .treatment-card h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .treatment-card .content p,
+      .treatment-card .content .intro-behandeling {
+        margin: 0 0 1rem;
+        color: #555;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      .treatment-card a {
+        display: inline-block;
+        background: var(--topnav-color);
+        color: #fff;
+        text-decoration: none;
+        padding: 0.7rem 1rem;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
+      .treatment-card a:hover {
+        background: #b78d69;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .treatment-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .page-shell {
+          width: 92vw;
+          padding: 0 16px 32px;
+        }
+
+        .treatment-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="topnav" id="myTopnav">
+      <li class="logo">
+        <a href="https://www.glowbybritt.be">
+          <img src="logo.png" alt="Logo" />
+        </a>
+      </li>
+      <div class="nav-items">
+        <li><a href="https://www.glowbybritt.be">Home</a></li>
+        <li class="dropdown">
+          <a href="Behandelingen" class="dropbtn active">Behandelingen</a>
+          <div class="dropdown-content">
+            <a href="Behandelingen/Pedicure">Pedicure</a>
+            <a href="Behandelingen/Massage">Massage</a>
+            <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
+            <a href="Behandelingen/Make-up">Make-up</a>
+            <a href="Behandelingen/WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
+            <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+            <a href="Behandelingen/Ontharingen">Ontharingen</a>
+            <a href="Behandelingen/Manicure">Manicure</a>
+            <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
+          </div>
+        </li>
+        <li><a href="Prijslijst">Prijslijst</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </div>
+      <li class="icon">
+        <a
+          href="javascript:void(0);"
+          style="font-size: 20px"
+          onclick="myFunction(this)"
+          >&#9776;</a
+        >
+      </li>
+    </ul>
+
+    <main class="page-shell">
+      <header class="page-header">
+        <h1>Onze behandelingen</h1>
+        <p>
+          Bij Glow By Britt staat ontspanning en verzorging centraal. Ontdek onze
+          behandelingen voor huid, lichaam, nagels en gebaren die je laten
+          stralen van binnen én van buiten.
+        </p>
+      </header>
+
+      <div class="info-note">
+        <strong>Goed om te weten:</strong> de vermelde behandeltijden zijn
+        richttijden. Afhankelijk van de behandeling en jouw persoonlijke
+        situatie kan de duur iets variëren. De behandeling wordt steeds
+        afgestemd op wat nodig is.
+      </div>
+
+      <section class="treatment-grid">
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/BasisPedicure.jpg" alt="Pedicure" />
+          <div class="content">
+            <h2>Pedicure</h2>
+            <p class="intro-behandeling">De pedicure behandelingen zorgen voor ontspanning, verzorging en een prachtig resultaat. Kies de behandeling die het beste bij jou past.</p>
+            <a href="Behandelingen/Pedicure">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/HeavenlyTouch.jpg" alt="Massage" />
+          <div class="content">
+            <h2>Massage</h2>
+            <p class="intro-behandeling">Laat je onderdompelen in pure luxe en ontspanning bij Glow By Britt. De massages zijn een zalig verwenmoment dat jou volledig tot rust brengt.</p>
+            <a href="Behandelingen/Massage">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/HydraterendeRugverzorging.jpg" alt="Lichaamsverzorging" />
+          <div class="content">
+            <h2>Lichaamsverzorging</h2>
+            <p class="intro-behandeling">Bij Glow By Britt draait lichaamsverzorging om méér dan alleen een stralende huid. De behandelingen combineren verzorging met pure ontspanning, zodat je lichaam weer helemaal in balans komt.</p>
+            <a href="Behandelingen/Lichaamsverzorging">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/DagMakeUp.jpg" alt="Make-up" />
+          <div class="content">
+            <h2>Make-up</h2>
+            <p class="intro-behandeling">Laat je natuurlijke schoonheid stralen tijdens een heerlijk moment van ontspanning. Een make-up look wordt volledig afgestemd op jouw stijl en gelegenheid.</p>
+            <a href="Behandelingen/Make-up">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/WenkbrauwenKleuren.jpg" alt="Wimpers en wenkbrauwen" />
+          <div class="content">
+            <h2>Wimpers en wenkbrauwen</h2>
+            <p class="intro-behandeling">Laat je ogen spreken tijdens een heerlijk verwenmoment. Wimpers en wenkbrauwen krijgen aandacht en verzorging, voor een natuurlijke en stralende look.</p>
+            <a href="Behandelingen/WimpersWenkbrauwen">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/BasisGelaatsverzorging.jpg" alt="Gelaatsverzorgingen" />
+          <div class="content">
+            <h2>Gelaatsverzorgingen</h2>
+            <p class="intro-behandeling">Verwen je huid met een moment van ontspanning. Gelaatsverzorgingen laten je gezicht stralen en zorgen voor een natuurlijke frisheid.</p>
+            <a href="Behandelingen/Gelaatsverzorgingen">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/Ontharingen.jpg" alt="Ontharingen" />
+          <div class="content">
+            <h2>Ontharingen</h2>
+            <p class="intro-behandeling">Laat je huid ontspannen en glanzen met onze verzorgende ontharingsbehandelingen. Kies jouw perfecte aanpak voor een zachte, gladde finish.</p>
+            <a href="Behandelingen/Ontharingen">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/BasisManicure.jpg" alt="Manicure" />
+          <div class="content">
+            <h2>Manicure</h2>
+            <p class="intro-behandeling">De manicure behandelingen zorgen voor ontspanning, verzorging en een prachtig resultaat. Kies de behandeling die het beste bij jou past.</p>
+            <a href="Behandelingen/Manicure">Bekijk behandeling</a>
+          </div>
+        </article>
+
+        <article class="treatment-card">
+          <img src="Behandelingen/Images/Cadeaubon.png" alt="Cadeaubon" />
+          <div class="content">
+            <h2>Cadeaubon</h2>
+            <p class="intro-behandeling">Geef het perfecte cadeau voor een moment van verwennerij en luxe.</p>
+            <a href="Behandelingen/Cadeaubon">Bekijk behandeling</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Glow By Britt. All rights reserved.</p>
+      <p>
+        <a href="PrivacyPolicy">Privacybeleid</a>
+        <a href="TermsAndConditions">Algemene voorwaarden</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
