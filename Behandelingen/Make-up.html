@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
-  <title>Glow By Britt</title>
+  <title>Make-up | Glow By Britt</title>
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Ontdek de make-up behandelingen van Glow By Britt voor een natuurlijke daglook of glamoureuze avondlook."
+  />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="behandelingen.css" />
 </head>
@@ -12,8 +16,8 @@
 <body>
   <ul class="topnav" id="myTopnav">
     <li class="logo">
-      <a href="https://www.glowbybritt.be">
-        <img src="../logo.png" alt="Logo" />
+      <a href="https://www.glowbybritt.be" aria-label="Homepagina Glow By Britt">
+        <img src="../logo.png" alt="Logo van Glow By Britt" />
       </a>
     </li>
     <div class="nav-items">
@@ -21,14 +25,14 @@
       <li class="dropdown">
         <a href="../Behandelingen" class="dropbtn">Behandelingen</a>
         <div class="dropdown-content">
-          <a href="Pedicure">Pedicure</a>
-          <a href="Massage">Massage</a>
-          <a href="Lichaamsverzorging">Lichaamsverzorging</a>
-          <a class="active" href="Make-up">Make-up</a>
-          <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
           <a href="Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+          <a href="Pedicure">Pedicure</a>
           <a href="Ontharingen">Ontharingen</a>
+          <a href="Massage">Massage</a>
+          <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
+          <a href="Rugverzorgingen">Rugverzorgingen</a>
           <a href="Manicure">Manicure</a>
+          <a class="active" href="Make-up">Make-up</a>
           <a href="Cadeaubon">Cadeaubon</a>
         </div>
       </li>
@@ -41,38 +45,55 @@
   </ul>
   <section class="treatments">
     <h1>Make-up</h1>
-    <p class="intro-behandeling">Laat je natuurlijke schoonheid stralen tijdens een heerlijk moment van ontspanning. Een make-up
-      look wordt volledig afgestemd op jouw stijl en gelegenheid.</p>
+    <p class="intro-behandeling">Laat je natuurlijke schoonheid stralen tijdens een heerlijk moment van ontspanning. Iedere make-up look wordt volledig afgestemd op jouw stijl en de gelegenheid.</p>
     <div class="treatment-row">
       <img src="Images/DagMakeUp.jpg" alt="Dag make-up" />
       <div class="treatment-info">
-        <h2>Dag make-up</h2>
+        <h2><span class="title">Dag make-up</span></h2>
         <p>Natuurlijke make-up voor een frisse, dagelijkse uitstraling.</p>
       </div>
     </div>
     <div class="treatment-row reverse">
       <img src="Images/AvondMakeUp.jpg" alt="Avond make-up" />
       <div class="treatment-info">
-        <h2>Avond make-up</h2>
+        <h2><span class="title">Avond make-up</span></h2>
         <p>Glamoureuze make-up voor speciale gelegenheden of feestjes.</p>
       </div>
     </div>
     <div class="treatment-row">
-      <img src="../logo.png" alt="Logo" />
+      <img src="../logo.png" alt="Logo van Glow By Britt" />
       <div class="treatment-info">
-        <h2>Optie aan huis</h2>
+        <h2><span class="title">Optie aan huis</span></h2>
         <p>
-          Professionele make-up service bij jou thuis voor gemak en comfort.
+          Liever thuis opgemaakt worden? Ook daarvoor kan je kiezen voor een afspraak aan huis. Ideaal voor een speciale gelegenheid waarbij je op een rustige, comfortabele manier wilt klaarmaken zonder je nog te hoeven verplaatsen.
         </p>
+        <p><b>Verplaatsingskost: €0,50/km</b></p>
+        <p>De verplaatsingskost wordt berekend op basis van de volledige heen- en terugrit.</p>
       </div>
     </div>
   </section>
-  <footer>
-    <p>© 2025 Glow By Britt. All rights reserved.</p>
-    <p>
-      <a href="PrivacyPolicy">Privacybeleid</a>
-      <a href="TermsAndConditions">Algemene voorwaarden</a>
-    </p>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__block">
+        <h3 class="site-footer__title">Glow By Britt</h3>
+        <p>Schoonheidssalon in Verrebroek</p>
+        <p>Edward Jaecquemijnslaan 37</p>
+        <p>9130 Verrebroek</p>
+      </div>
+      <div class="site-footer__block">
+        <h3 class="site-footer__title">Contact</h3>
+        <a href="tel:+32483228556">WhatsApp (bericht): 0483 22 85 56</a>
+        <a href="mailto:Glowbybritt.beauty@gmail.com">Glowbybritt.beauty@gmail.com</a>
+      </div>
+      <div class="site-footer__block">
+        <h3 class="site-footer__title">Info</h3>
+        <div class="site-footer__links">
+          <a href="../PrivacyPolicy">Privacybeleid</a>
+          <a href="../TermsAndConditions">Algemene voorwaarden</a>
+        </div>
+      </div>
+    </div>
+    <p class="site-footer__bottom">© 2025 Glow By Britt. Alle rechten voorbehouden.</p>
   </footer>
   <script src="../script.js"></script>
 </body>

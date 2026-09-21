@@ -10,10 +10,44 @@
   margin-bottom: 0.5rem;
 }
 
+.treatments .intro-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto 3rem;
+  max-width: 1100px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.82), rgba(244,236,230,0.7));
+  border: 1px solid #f0e4dc;
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 28px rgba(94, 72, 58, 0.06);
+}
+
+.treatments .intro-image {
+  flex: 1;
+  min-width: 0;
+}
+
+.treatments .intro-image img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
 .treatments .intro-behandeling {
+  flex: 1.4;
+  margin: 0;
   text-align: center;
-  color: #555;
+  color: #4d433e;
+  font-size: 1.03rem;
+  line-height: 1.8;
   margin-bottom: 3rem;
+}
+
+.treatments .intro-behandeling b {
+  color: #3f332d;
 }
 
 .treatments .extraInfo-behandeling {
@@ -47,9 +81,36 @@
 }
 
 .treatment-info h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
   color: #333;
+}
+
+.treatment-info h2 .title {
+  display: inline-flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.treatment-info h2 .title::after {
+  content: "";
+  display: block;
+  flex: 1;
+  border-bottom: 1px dotted #c8b9ab;
+  min-width: 20px;
+  margin-left: 0.5rem;
+}
+
+.treatment-info h2 .duration {
+  white-space: nowrap;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #7a685d;
 }
 
 .treatment-info p {
@@ -58,10 +119,20 @@
   font-size: 1rem;
 }
 
+.dots {
+  flex: 1;
+  border-bottom: 1px dotted #ccc;
+  margin: 0 8px;
+}
+
 /* Mobile */
 @media screen and (max-width: 600px) {
   .treatment-row,
   .treatment-row.reverse {
     flex-direction: column;
+  }
+
+  .dots {
+    display: none;
   }
 }

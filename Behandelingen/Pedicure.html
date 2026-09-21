@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
-    <title>Glow By Britt</title>
+    <title>Pedicure | Glow By Britt</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pedicure behandelingen bij Glow By Britt in Verrebroek: basic pedicure, lak, gellak en luxe voetverzorging."
+    />
+    <meta
+      name="keywords"
+      content="pedicure Verrebroek, voetverzorging Verrebroek, pedicure met gellak"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="behandelingen.css" />
   </head>
   <body>
     <ul class="topnav" id="myTopnav">
       <li class="logo">
-        <a href="https://www.glowbybritt.be">
-          <img src="../logo.png" alt="Logo" />
+        <a href="https://www.glowbybritt.be" aria-label="Homepagina Glow By Britt">
+          <img src="../logo.png" alt="Logo van Glow By Britt" />
         </a>
       </li>
       <div class="nav-items">
@@ -19,14 +27,14 @@
         <li class="dropdown">
           <a href="../Behandelingen" class="dropbtn">Behandelingen</a>
           <div class="dropdown-content">
-            <a class="active" href="Pedicure">Pedicure</a>
-            <a href="Massage">Massage</a>
-            <a href="Lichaamsverzorging">Lichaamsverzorging</a>
-            <a href="Make-up">Make-up</a>
-            <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
             <a href="Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+            <a class="active" href="Pedicure" aria-current="page">Pedicure</a>
             <a href="Ontharingen">Ontharingen</a>
+            <a href="Massage">Massage</a>
+            <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
+            <a href="Rugverzorgingen">Rugverzorgingen</a>
             <a href="Manicure">Manicure</a>
+            <a href="Make-up">Make-up</a>
             <a href="Cadeaubon">Cadeaubon</a>
           </div>
         </li>
@@ -45,13 +53,14 @@
     <section class="treatments">
       <h1>Pedicure</h1>
       <p class="intro-behandeling">
-        De pedicure behandelingen zorgen voor ontspanning, verzorging en een
-        prachtig resultaat. Kies de behandeling die het beste bij jou past.
+        Bij Glow By Britt bieden onze pedicurebehandelingen ontspanning,
+        verzorging en een prachtig resultaat. Kies de behandeling die het beste
+        bij jou past.
       </p>
       <div class="treatment-row">
         <img src="Images/BasisPedicure.jpg" alt="Basis pedicure" />
         <div class="treatment-info">
-          <h2>Basis Pedicure</h2>
+          <h2><span class="title">Basis Pedicure</span><span class="duration">30 min</span></h2>
           <p>
             Verzorgende basisbehandeling met nagelknippen, vijlen en
             eeltverwijdering.
@@ -59,42 +68,61 @@
         </div>
       </div>
       <div class="treatment-row reverse">
-        <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" />
-        <div class="treatment-info">
-          <h2>Spa Pedicure</h2>
-          <p>
-            Luxe pedicure inclusief scrub en masker voor zijdezachte voeten en
-            ultieme ontspanning.
-          </p>
-        </div>
-      </div>
-      <div class="treatment-row">
         <img src="Images/BasisPedicureLakken.jpg" alt="Basis + lakken" />
         <div class="treatment-info">
-          <h2>Basis + Lakken</h2>
+          <h2><span class="title">Basis + Lakken</span><span class="duration">45 min</span></h2>
           <p>
             Basis pedicure inclusief nagellak naar keuze, voor een verzorgde
             look.
           </p>
         </div>
       </div>
-      <div class="treatment-row reverse">
+      <div class="treatment-row">
         <img src="Images/BasisPedicureGellak.jpg" alt="Basis + gellak" />
         <div class="treatment-info">
-          <h2>Basis + Gellak</h2>
+          <h2><span class="title">Basis + Gellak</span><span class="duration">55 min</span></h2>
           <p>
             Basis pedicure met gellak die weken mooi blijft zitten.
+          </p>
+          <h2><span class="title">Gellak verwijderen</span></h2>
+          <p>
+            Gellak/Flexi Tips geplaatst door een andere salon: verwijdering wordt aangerekend.
+          </p>
+        </div>
+      </div>
+      <div class="treatment-row reverse">
+        <img src="Images/SpaPedicure.jpg" alt="Spa pedicure" />
+        <div class="treatment-info">
+          <h2><span class="title">+ Extra totale voetverzorging</span></h2>
+          <p>
+            Een heerlijk extra verwenmoment voor de voeten, met een combinatie van reiniging, scrub, massage en intensieve verzorging. Enkel bij te boeken in combinatie met een gelaatsverzorging of pedicure.
           </p>
         </div>
       </div>
     </section>
 
-    <footer>
-      <p>© 2025 Glow By Britt. All rights reserved.</p>
-      <p>
-        <a href="PrivacyPolicy">Privacybeleid</a>
-        <a href="TermsAndConditions">Algemene voorwaarden</a>
-      </p>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Glow By Britt</h3>
+          <p>Schoonheidssalon in Verrebroek</p>
+          <p>Edward Jaecquemijnslaan 37</p>
+          <p>9130 Verrebroek</p>
+        </div>
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Contact</h3>
+          <a href="tel:+32483228556">WhatsApp (bericht): 0483 22 85 56</a>
+          <a href="mailto:Glowbybritt.beauty@gmail.com">Glowbybritt.beauty@gmail.com</a>
+        </div>
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Info</h3>
+          <div class="site-footer__links">
+            <a href="../PrivacyPolicy">Privacybeleid</a>
+            <a href="../TermsAndConditions">Algemene voorwaarden</a>
+          </div>
+        </div>
+      </div>
+      <p class="site-footer__bottom">© 2025 Glow By Britt. Alle rechten voorbehouden.</p>
     </footer>
     <script src="../script.js"></script>
   </body>

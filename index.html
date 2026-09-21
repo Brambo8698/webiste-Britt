@@ -1,91 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
-    <title>Glow By Britt</title>
+    <title>Glow By Britt | Gelaatsverzorging, pedicure & massage</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Glow By Britt is een schoonheidssalon in Verrebroek voor gelaatsverzorging, pedicure, massage, ontharing en meer. Plan hier je afspraak."
+    />
+    <meta
+      name="keywords"
+      content="Glow By Britt, schoonheidssalon Verrebroek, gelaatsverzorging Verrebroek, pedicure Verrebroek, massage Verrebroek, ontharing Verrebroek"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <style>
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
     .column {
-      float: left;
-      width: 24%;
+      flex: 1 1 22%;
+      max-width: 24%;
       padding: 10px;
       margin-top: 10px;
     }
-    .columnside {
-      float: left;
-      width: 14%;
-      padding: 1px;
-    }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
+    .columnside {
+      flex: 0 0 14%;
     }
 
     .text {
       text-align: left;
       font-size: large;
       font-family: Lato, sans-serif;
-      float: left;
-      width: 36%;
+      flex: 1 1 36%;
+      max-width: 36%;
       padding: 10px;
       margin-top: 10px;
     }
 
     .picture {
-      float: left;
-      width: 36%;
+      flex: 1 1 36%;
+      max-width: 36%;
       padding: 10px;
       margin-top: 10px;
       text-align: center;
     }
 
     @media screen and (max-width: 600px) {
+      .row {
+        display: block;
+      }
+
       .columnside {
-        width: 0%;
+        display: none;
       }
-      .column {
-        width: 33%;
-        padding: 2px;
-      }
-      .text {
-        width: 100%;
-      }
+
+      .column,
+      .text,
       .picture {
+        max-width: 100%;
         width: 100%;
+        flex: 1 1 100%;
+        padding: 8px 12px;
       }
     }
   </style>
   <body>
     <ul class="topnav" id="myTopnav">
       <li class="logo">
-        <a href="https://www.glowbybritt.be">
-          <img src="logo.png" alt="Logo" />
+        <a href="https://www.glowbybritt.be" aria-label="Homepagina Glow By Britt">
+          <img src="logo.png" alt="Logo van Glow By Britt" />
         </a>
       </li>
       <div class="nav-items">
         <li>
-          <a class="active" href="https://www.glowbybritt.be"
+          <a class="active" href="https://www.glowbybritt.be" aria-current="page"
             >Home</a
           >
         </li>
         <li class="dropdown">
           <a href="Behandelingen" class="dropbtn">Behandelingen</a>
           <div class="dropdown-content">
+            <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
             <a href="Behandelingen/Pedicure">Pedicure</a>
+            <a href="Behandelingen/Ontharingen">Ontharingen</a>
             <a href="Behandelingen/Massage">Massage</a>
-            <a href="Behandelingen/Lichaamsverzorging">Lichaamsverzorging</a>
-            <a href="Behandelingen/Make-up">Make-up</a>
             <a href="Behandelingen/WimpersWenkbrauwen"
               >Wimpers en wenkbrauwen</a
             >
-            <a href="Behandelingen/Gelaatsverzorgingen">Gelaatsverzorgingen</a>
-            <a href="Behandelingen/Ontharingen">Ontharingen</a>
+            <a href="Behandelingen/Rugverzorgingen">Rugverzorgingen</a>
             <a href="Behandelingen/Manicure">Manicure</a>
+            <a href="Behandelingen/Make-up">Make-up</a>
             <a href="Behandelingen/Cadeaubon">Cadeaubon</a>
           </div>
         </li>
@@ -102,42 +112,60 @@
       </li>
     </ul>
 
-    <div class="row">
-      <div class="columnside"></div>
-      <div class="column"><img src="picture2.jpeg" width="100%" /></div>
-      <div class="column"><img src="picture1.jpeg" width="100%" /></div>
-      <div class="column"><img src="picture3.jpeg" width="100%" /></div>
-      <div class="columnside"></div>
-    </div>
-    <div class="row">
-      <div class="columnside"></div>
-      <div class="text">
-        <h2>Welkom bij Glow By Britt</h2>
+    <main>
+      <div class="row" aria-label="Beeldcollage van behandelingen en salon">
+        <div class="columnside"></div>
+        <div class="column"><img src="picture2.jpeg" width="100%" loading="lazy" decoding="async" alt="Salonbeeld van Glow By Britt" /></div>
+        <div class="column"><img src="picture1.jpeg" width="100%" loading="lazy" decoding="async" alt="Gelaatsverzorging in behandeling" /></div>
+        <div class="column"><img src="picture3.jpeg" width="100%" loading="lazy" decoding="async" alt="Behandeling in de schoonheidssalon" /></div>
+        <div class="columnside"></div>
+      </div>
+      <div class="row">
+        <div class="columnside"></div>
+        <div class="text">
+          <h1>Welkom bij Glow By Britt | Schoonheidssalon in Verrebroek</h1>
         <p>
-          Ik ben Britt Van Cronenburg. Ik behaalde mijn diploma tot
-          schoonheidsspecialiste in 2024. Na de opleiding begon het bij mij al
-          snel te kriebelen om mijn eigen schoonheidssalon te starten. Zo
-          ontstond in 2025 Glow By Britt.
+          Ik ben Britt Van Cronenburg. Ik behaalde in 2024 mijn diploma als
+          schoonheidsspecialiste. Na de opleiding begon het bij mij al snel te
+          kriebelen om mijn eigen schoonheidssalon te starten. Zo ontstond in
+          2025 Glow By Britt.
         </p>
         <p>
           Bij Glow By Britt staat de beleving centraal: een moment van
           ontspanning en rust, waarin ik mensen laat stralen van binnen én van
-          buiten. Dit door tal van behandelingen: gelaatsverzorging,
-          lichaamsverzorging, ontharing, pedicure, manicure, flexi tips
-          nagelverlenging, massage en tot slot het kleuren en liften van de
+          buiten. Daarom bieden we een ruime waaier aan behandelingen aan, zoals
+          gelaatsverzorging, rugverzorgingen, ontharing, pedicure, manicure,
+          flexi tips, nagelverlenging, massage en het kleuren en liften van de
           wenkbrauwen en wimpers.
         </p>
-        <p>Tot snel!</p>
+        <p>Tot snel!</p>
       </div>
-      <div class="picture"><img src="picture4.jpeg" width="75%" /></div>
-      <div class="columnside"></div>
-    </div>
-    <footer>
-      <p>© 2025 Glow By Britt. All rights reserved.</p>
-      <p>
-        <a href="PrivacyPolicy">Privacybeleid</a>
-        <a href="TermsAndConditions">Algemene voorwaarden</a>
-      </p>
+          <div class="picture"><img src="picture4.jpeg" width="75%" loading="lazy" decoding="async" alt="Britt verzorgt een klant in het salon" /></div>
+          <div class="columnside"></div>
+        </div>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Glow By Britt</h3>
+          <p>Schoonheidssalon in Verrebroek</p>
+          <p>Edward Jaecquemijnslaan 37</p>
+          <p>9130 Verrebroek</p>
+        </div>
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Contact</h3>
+          <a href="tel:+32483228556">WhatsApp (bericht): 0483 22 85 56</a>
+          <a href="mailto:Glowbybritt.beauty@gmail.com">Glowbybritt.beauty@gmail.com</a>
+        </div>
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Info</h3>
+          <div class="site-footer__links">
+            <a href="PrivacyPolicy">Privacybeleid</a>
+            <a href="TermsAndConditions">Algemene voorwaarden</a>
+          </div>
+        </div>
+      </div>
+      <p class="site-footer__bottom">© 2025 Glow By Britt. Alle rechten voorbehouden.</p>
     </footer>
     <script src="script.js"></script>
   </body>

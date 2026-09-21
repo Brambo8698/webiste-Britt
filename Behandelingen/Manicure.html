@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
-    <title>Glow By Britt</title>
+    <title>Manicure | Glow By Britt</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manicure behandelingen bij Glow By Britt: basis manicure, lakken, gellak en extra verzorging voor mooie handen."
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="behandelingen.css" />
   </head>
   <body>
     <ul class="topnav" id="myTopnav">
       <li class="logo">
-        <a href="https://www.glowbybritt.be">
-          <img src="../logo.png" alt="Logo" />
+        <a href="https://www.glowbybritt.be" aria-label="Homepagina Glow By Britt">
+          <img src="../logo.png" alt="Logo van Glow By Britt" />
         </a>
       </li>
       <div class="nav-items">
@@ -19,14 +23,14 @@
         <li class="dropdown">
           <a href="../Behandelingen" class="dropbtn">Behandelingen</a>
           <div class="dropdown-content">
-            <a href="Pedicure">Pedicure</a>
-            <a href="Massage">Massage</a>
-            <a href="Lichaamsverzorging">Lichaamsverzorging</a>
-            <a href="Make-up">Make-up</a>
-            <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
             <a href="Gelaatsverzorgingen">Gelaatsverzorgingen</a>
+            <a href="Pedicure">Pedicure</a>
             <a href="Ontharingen">Ontharingen</a>
+            <a href="Massage">Massage</a>
+            <a href="WimpersWenkbrauwen">Wimpers en wenkbrauwen</a>
+            <a href="Rugverzorgingen">Rugverzorgingen</a>
             <a class="active" href="Manicure">Manicure</a>
+            <a href="Make-up">Make-up</a>
             <a href="Cadeaubon">Cadeaubon</a>
           </div>
         </li>
@@ -45,37 +49,44 @@
     <section class="treatments">
       <h1>Manicure</h1>
       <p class="intro-behandeling">
-        De manicure behandelingen zorgen voor ontspanning, verzorging en een
-        prachtig resultaat. Kies de behandeling die het beste bij jou past.
+        Bij Glow By Britt bieden onze manicurebehandelingen ontspanning,
+        verzorging en een prachtig resultaat. Kies de behandeling die het beste
+        bij jou past.
       </p>
       <div class="treatment-row">
         <img src="Images/BasisManicure.jpg" alt="Basis manicure" />
         <div class="treatment-info">
-          <h2>Basis Manicure</h2>
+          <h2><span class="title">Basis Manicure</span><span class="duration">30 min</span></h2>
           <p>Nagels vijlen en verzorgen voor een nette uitstraling.</p>
         </div>
       </div>
       <div class="treatment-row reverse">
-        <img src="Images/SpaManicure.jpg" alt="Spa manicure" />
-        <div class="treatment-info">
-          <h2>Spa Manicure</h2>
-          <p>Luxe manicure met scrub, maskers en ontspannende handmassage.</p>
-        </div>
-      </div>
-      <div class="treatment-row">
         <img src="Images/BasisManicureLakken.jpg" alt="Basis manicure lakken" />
         <div class="treatment-info">
-          <h2>Basis + lakken</h2>
+          <h2><span class="title">Basis + lakken</span><span class="duration">45 min</span></h2>
           <p>
             Basis manicure aangevuld met nagellak voor een verzorgde finish.
           </p>
         </div>
       </div>
-      <div class="treatment-row reverse">
+      <div class="treatment-row">
         <img src="Images/BasisManicureGellak.jpg" alt="Basis manicure gellak" />
         <div class="treatment-info">
-          <h2>Basis + gellak</h2>
+          <h2><span class="title">Basis + gellak</span><span class="duration">60 min</span></h2>
           <p>Basis manicure met gelnagellak dat weken blijft zitten.</p>
+        </div>
+      </div>
+      <div class="treatment-row reverse">
+        <img
+          src="Images/BasisManicureFlexiTipGellak.jpg"
+          alt="Basis manicure flexi tip gellak"
+        />
+        <div class="treatment-info">
+          <h2><span class="title">Basis + flexi tip + gellak</span><span class="duration">90 min</span></h2>
+          <p>
+            Basis manicure met flexi tips en gelnagellak dat weken blijft
+            zitten.
+          </p>
         </div>
       </div>
       <div class="treatment-row">
@@ -84,20 +95,42 @@
           alt="Basis manicure flexi tip gellak"
         />
         <div class="treatment-info">
-          <h2>Basis + flexi tip + gellak</h2>
+          <h2><span class="title">Gellak/Flexi tips verwijderen</span></h2>
           <p>
-            Basis manicure met flexi tips en gelnagellak dat weken blijft
-            zitten.
+            Gellak/Flexi Tips geplaatst door een andere salon: verwijdering wordt aangerekend.
           </p>
         </div>
       </div>
+      <div class="treatment-row reverse">
+        <img src="Images/SpaManicure.jpg" alt="Spa manicure" />
+        <div class="treatment-info">
+          <h2><span class="title">+ Extra totale handverzorging</span></h2>
+          <p>Een heerlijk extra verwenmoment voor de handen, met een combinatie van reiniging, scrub, massage en intensieve verzorging. Enkel bij te boeken in combinatie met een gelaatsverzorging of manicure.</p>
+        </div>
+      </div>
     </section>
-    <footer>
-      <p>© 2025 Glow By Britt. All rights reserved.</p>
-      <p>
-        <a href="PrivacyPolicy">Privacybeleid</a>
-        <a href="TermsAndConditions">Algemene voorwaarden</a>
-      </p>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Glow By Britt</h3>
+          <p>Schoonheidssalon in Verrebroek</p>
+          <p>Edward Jaecquemijnslaan 37</p>
+          <p>9130 Verrebroek</p>
+        </div>
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Contact</h3>
+          <a href="tel:+32483228556">WhatsApp (bericht): 0483 22 85 56</a>
+          <a href="mailto:Glowbybritt.beauty@gmail.com">Glowbybritt.beauty@gmail.com</a>
+        </div>
+        <div class="site-footer__block">
+          <h3 class="site-footer__title">Info</h3>
+          <div class="site-footer__links">
+            <a href="../PrivacyPolicy">Privacybeleid</a>
+            <a href="../TermsAndConditions">Algemene voorwaarden</a>
+          </div>
+        </div>
+      </div>
+      <p class="site-footer__bottom">© 2025 Glow By Britt. Alle rechten voorbehouden.</p>
     </footer>
     <script src="../script.js"></script>
   </body>
