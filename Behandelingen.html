@@ -48,6 +48,7 @@
         color: #4b4b4b;
         font-size: 0.98rem;
         line-height: 1.6;
+        text-align: center;
       }
 
       .info-note strong {
@@ -75,6 +76,10 @@
       }
 
       .treatment-card .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         padding: 1.2rem 1.2rem 1.4rem;
       }
 
@@ -82,6 +87,7 @@
         margin: 0 0 0.5rem;
         font-size: 1.5rem;
         color: #333;
+        text-align: center;
       }
 
       .treatment-card .content p,
@@ -93,13 +99,16 @@
       }
 
       .treatment-card a {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         background: var(--topnav-color);
         color: #fff;
         text-decoration: none;
         padding: 0.7rem 1rem;
         border-radius: 999px;
         font-weight: 600;
+        text-align: center;
       }
 
       .treatment-card a:hover {

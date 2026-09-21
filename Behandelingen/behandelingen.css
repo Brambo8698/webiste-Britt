@@ -132,6 +132,27 @@
     flex-direction: column;
   }
 
+  .treatments .intro-wrap {
+    display: block;
+    width: calc(100% + 2rem);
+    max-width: none;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .treatments .intro-image {
+    display: none;
+  }
+
+  .treatments .intro-behandeling {
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
   .dots {
     display: none;
   }

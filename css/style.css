@@ -36,11 +36,13 @@ img {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  text-align: center;
 }
 
 .site-footer__block {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
@@ -50,6 +52,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .site-footer__block p,
@@ -59,6 +62,7 @@ img {
   text-decoration: none;
   line-height: 1.6;
   font-size: 0.95rem;
+  text-align: center;
 }
 
 .site-footer__block a[href^="tel:"] {
@@ -172,6 +176,10 @@ li.dropdown {
   display: block;
 }
 
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -241,5 +249,13 @@ h1 {
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
+  }
+
+  .topnav.responsive .dropdown-content {
+    display: none;
+  }
+
+  .topnav.responsive .dropdown.open .dropdown-content {
+    display: block;
   }
 }
